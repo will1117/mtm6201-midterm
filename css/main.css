@@ -74,6 +74,55 @@ ul {
     border: 2px solid #cfdfb5;
 }
 
+/*** Global contact style ***/
+.contact-pg-envelope button {
+    background-color: #ededed;
+    border: 3px solid #c2c2c2;
+    color: #4e4e4e;
+}
+.contact-pg-envelope button:hover {
+    background-color: #c2c2c2;
+    border: 3px solid #ededed;
+    color: #ffffff;
+    cursor: pointer;
+}
+.contact-icons button {
+    background-color: #cfdfb5;
+    border: 2px solid #ededed;
+}
+.contact-icons button:hover {
+    cursor: pointer;
+    background-color: #c2c2c2;
+}
+.message-box textarea {
+    outline: none;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    resize: none;
+}
+.message-box input {
+    outline: none;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    resize: none;
+}
+.message-box label {
+    display: block;
+}
+.name-box {
+    display: flex;
+}
+.message-box button {
+    background-color: #ededed;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+}
+.message-box button:hover {
+    cursor: pointer;
+    background-color: #a0d14e;
+    border: 2px solid #cfdfb5;
+}
+
 /*** Global footer styles ***/
 footer {
     background-color: #efd7bb;
@@ -86,6 +135,9 @@ footer {
 }
 .footer-icons button:hover {
     color: #000000;
+}
+.active-hours {
+    font-weight: bold;
 }
 
 
@@ -131,7 +183,7 @@ footer {
         font-size: 1.3rem;
     }
 
-    /***** Home content *****/
+    /*** Home content ***/
     .home-main {
         padding-left: 10px;
         padding-right: 10px;
@@ -154,6 +206,7 @@ footer {
     .home-col {
         display: flex;
         flex-direction: column;
+        /* resizes images */
         width: 30%;
         align-items: center;
     }
@@ -173,7 +226,7 @@ footer {
         font-size: 1rem;
     }
 
-    /***** About content *****/
+    /*** About content ***/
     .pic-of-me {
         width: 83%;
         display: block;
@@ -202,23 +255,7 @@ footer {
         padding: 10px 80px 10px 80px;
         font-size: 1rem;
     }
-    /* .about-page-icons {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .about-page-icons button {
-        color: black;
-        background:transparent;
-        border: none;
-        cursor: pointer;
-        font-size: 2rem;
-    }
-    .about-page-icons button:hover {
-        color: #a0d14e;
-    } */
-    table,
-    h2 {
+    .tbhead {
         text-align: center;
     }
     table,
@@ -230,5 +267,67 @@ footer {
         margin-left: auto;
         margin-right: auto;
         text-align: left;
+    }
+
+    /*** Contact content ***/
+    .contact-main {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .contact-banner-img {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 140px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .contact-me {
+        text-align: center;
+    }
+    .contact-socials {
+        text-align: center;
+    }
+    .contact-pg-envelope {
+        padding-bottom: 15px;
+    }
+    .contact-pg-envelope button {
+        padding: 10px 80px 10px 80px;
+        font-size: 2rem;
+        border-radius: 10px;
+    }
+    .contact-icons {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .contact-icons button {
+        font-size: 1.4rem;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .message-box textarea {
+        width: 340px;
+        padding: 5px;
+    }
+    .message-box input {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    .lastname {
+        padding-left: 12px;
+    }
+    .emailbox input {
+        width: 340px;
+    }
+    .message-box button {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .active-hours {
+        text-align: center;
     }
 }
