@@ -331,3 +331,10 @@ footer {
         text-align: center;
     }
 }
+
+
+
+/***** MOBILE STYLE *****/
+@media screen and (max-width:600px) {
+    
+}
