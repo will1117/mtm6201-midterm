@@ -156,6 +156,8 @@ footer {
     header p {
         text-align: center;
         font-size: 0.8rem;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     ul {
         text-align: center;
@@ -165,7 +167,7 @@ footer {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 7%;
+        margin-top: 7%;
     }
     .header-icons {
         text-align: center;
@@ -312,6 +314,7 @@ footer {
     .message-box textarea {
         width: 340px;
         padding: 5px;
+        height: 100px;
     }
     .message-box input {
         padding: 5px;
@@ -334,7 +337,220 @@ footer {
 
 
 
-/***** MOBILE STYLE *****/
-@media screen and (max-width:600px) {
+/***** TABLET STYLE *****/
+@media screen and (max-width:900px) and (min-width:600px) {
+     /*** Header ***/
+     header {
+        padding-bottom: 10px;
+        padding: 10px;
+    }
+    .menu button {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    header p {
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    ul {
+        text-align: center;
+    }
+    .logo {
+        width: 30%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5%;
+    }
+    .header-icons {
+        text-align: center;
+    }
+    .header-icons button {
+        font-size: 2rem;
+    }
+
+    /*** Footer styles ***/
+    footer {
+        padding: 5% 0% 5% 4%;
+    }
+    .footer-icons button {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    /*** Home content ***/
+    .home-main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .services-summary {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .portfolio-preview-head {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .portfolio-container {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .home-col {
+        display: flex;
+        flex-direction: column;
+        /* resizes images */
+        width: 30%;
+        align-items: center;
+    }
+    .home-col img {
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .portfolio-link {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        padding-top: 20px;
+    }
+    .portfolio-link button {
+        padding: 10px 160px 10px 160px;
+        font-size: 1.1rem;
+    }
+
+    /*** About content ***/
+    .pic-of-me {
+        width: 70%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        border: 6px dashed #cfdfb5;
+    }
+    .about-me {
+        text-align: center;
+        margin: 8% 8% 10% 8%;
+        font-size: 1.1rem;
+    }
+    .my-services {
+        text-align: center;
+        margin: 8% 8% 8% 8%;
+        font-size: 1.1rem;
+    }
+    .contact-link {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-link button {
+        padding: 10px 80px 10px 80px;
+        font-size: 1rem;
+    }
+    .tbhead {
+        text-align: center;
+    }
+    table,
+    th,
+    td {
+        border:2px double black;
+        border-collapse: collapse;
+        padding: 10px 150px 10px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    /*** Contact content ***/
+    .contact-main {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .contact-banner-img {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 140px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .contact-me {
+        text-align: center;
+    }
+    .contact-socials {
+        text-align: center;
+    }
+    .contact-pg-envelope {
+        padding-bottom: 15px;
+    }
+    .contact-pg-envelope button {
+        padding: 10px 80px 10px 80px;
+        font-size: 1.8rem;
+        border-radius: 10px;
+    }
+    .contact-icons {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .contact-icons button {
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     
+    .message-box textarea {
+        width: 450px;
+        padding: 5px;
+        height: 150px;
+    }
+    .message-box input {
+        padding: 5px;
+        margin-bottom: 5px;
+        padding-left: 12px;
+        width: 205px;
+    }
+    .lastname {
+        padding-left: 12px;
+    }
+    .emailbox input {
+        width: 445px;
+    }
+    .message-box button {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .active-hours {
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/***** DESKTOP STYLE *****/
+@media screen and (min-width:900px) {
+    .pic-of-me {
+        width: 70%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        border: 6px dashed #cfdfb5;
+    }
 }
