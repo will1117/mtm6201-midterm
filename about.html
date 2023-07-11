@@ -38,26 +38,33 @@
         </header>
 
         <main class="about-main" role="main">
-            <!-- 600w img -->
+
+            <ul class="skip-links">
+                <li><a href="#abt-me">Skip to About Me</a></li>
+                <li><a href="#my-servs">Skip to My Services</a></li>
+                <li><a href="#servs-tble">Skip to Services Table</a></li>
+                <li><a href="#cont-link">Skip to Contact link</a></li>
+            </ul>
+
             <img class="pic-of-me" srcset="images/img600px/me.jpg 600w,
                                            images/img900px/me.jpg 900w,
                                            images/img1200px/me.jpg 1200w">
             
 
-            <div class="about-me">
+            <div class="about-me" id="abt-me">
                 <h2>About Me</h2>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sed, architecto dolore accusantium perferendis nulla rerum dolorum aspernatur exercitationem velit tenetur quo asperiores iure illum sunt distinctio deleniti sit vero. Sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sed, architecto dolore accusantium perferendis nulla rerum dolorum aspernatur exercitationem velit.</p>
             </div>
 
-            <div class="my-services">
+            <div class="my-services" id="my-servs">
                 <h2>My Services</h2>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero deserunt distinctio quam ut corporis, voluptates ullam deleniti minima explicabo fugiat, natus voluptatem, nihil iure. Necessitatibus illum esse illo dicta id! Ut corporis, voluptates ullam deleniti minima explicabo fugiat, natus voluptatem, nihil iure. Necessitatibus illum esse illo dicta id.</p>
             </div>
 
             <!-- Services Table -->
-            <table>
+            <table id="servs-tble">
                 <h2 class="tbhead">Basic Services</h2>
                 <tr>
                     <th>Category 1</th>
@@ -78,7 +85,7 @@
             </table>
 
             <!-- Link to Contact page -->
-            <a href="contact.html" class="contact-link"><button>Contact for further inquiries</button></a>
+            <a href="contact.html" id="cont-link" class="contact-link"><button>Contact for further inquiries</button></a>
         </main>
 
         <footer>

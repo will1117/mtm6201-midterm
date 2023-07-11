@@ -18,11 +18,11 @@ header {
     background-repeat: no-repeat;
 }
 nav ul li {
-    list-style: none;
     display: inline-block;
 }
 ul {
     padding-left: 0;
+    list-style: none;
 }
 .menu button {
     background-color: #ededed;
@@ -31,10 +31,10 @@ ul {
     cursor: pointer;
     font-weight: bold;
 }
-.menu button:hover {
+/* .menu button:hover {
     background-color: #efd7bb;
     border: 2px solid #e4b15a;
-}
+} */
 .header-icons button {
     color: white;
     background:transparent;
@@ -43,6 +43,11 @@ ul {
 }
 .header-icons button:hover {
     color: rgb(165, 165, 165);
+}
+.skip-links {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 /*** Global home styles ***/
@@ -176,6 +181,11 @@ footer {
     }
     .header-icons button {
         font-size: 2rem;
+    }
+    .skip-links {
+        font-size: 1rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     /*** Footer styles ***/
@@ -376,6 +386,11 @@ footer {
     }
     .header-icons button {
         font-size: 2rem;
+    }
+    .skip-links {
+        font-size: 1.3rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     /*** Footer styles ***/
@@ -599,6 +614,13 @@ footer {
     .header-icons button {
         font-size: 2rem;
     }
+    .skip-links {
+        font-size: 1.4rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 
     /*** Footer styles ***/
     footer {
@@ -787,4 +809,19 @@ footer {
         margin-right: 8%;
         margin-bottom: 30px;
     }
+}
+
+
+
+/***** ANIMATIONS *****/
+.menu button:hover {
+    transition-property: background-color, border;
+    transition-duration: 0.3s;
+    transition-delay: 0.15s;
+    transition-timing-function: ease-out;
+}
+
+.menu button:hover {
+    background-color: #efd7bb;
+    border: 2px solid #e4b15a;
 }
