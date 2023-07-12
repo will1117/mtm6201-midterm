@@ -46,8 +46,17 @@ ul {
 }
 .skip-links {
     text-align: center;
-    display: flex;
     justify-content: space-around;
+}
+.skip-links a {
+    color: #9c3232;
+    text-decoration: none;
+}
+.skip-links a:hover {
+    font-weight: bold;
+}
+.skip-links a:visited {
+    text-decoration: none;
 }
 
 /*** Global home styles ***/
@@ -186,6 +195,7 @@ footer {
         font-size: 1rem;
         margin-top: 30px;
         margin-bottom: 30px;
+        display: block;
     }
 
     /*** Footer styles ***/
@@ -391,6 +401,7 @@ footer {
         font-size: 1.3rem;
         margin-top: 40px;
         margin-bottom: 40px;
+        display: block;
     }
 
     /*** Footer styles ***/
@@ -616,10 +627,11 @@ footer {
     }
     .skip-links {
         font-size: 1.4rem;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-top: 60px;
+        margin-bottom: -20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
     }
 
     /*** Footer styles ***/
@@ -740,7 +752,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         object-fit: cover;
-        margin-top: 20px;
+        margin-top: 70px;
     }
     .contact-me {
         text-align: center;
